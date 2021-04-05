@@ -1,0 +1,139 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// “ú–{Œê resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 111, 93
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+FONT 9, "System"
+BEGIN
+    COMBOBOX        IDC_COMBO1,1,2,109,17,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC1,0,15,61,10
+    PUSHBUTTON      "Nam",IDC_BUTTON1,78,15,17,12
+    PUSHBUTTON      "Del",IDC_BUTTON2,95,15,15,12
+    COMBOBOX        IDC_COMBO2,1,25,55,12,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "PL2303",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,40,55,10
+    CONTROL         "No Send 0",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,50,55,10
+    CONTROL         "Send Whole",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,60,55,10
+    CONTROL         "No 1132 Bug",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,70,55,10
+    RTEXT           "Recv $",IDC_STATIC,55,30,25,10
+    EDITTEXT        IDC_EDIT1,80,30,30,10,ES_AUTOHSCROLL
+    RTEXT           "Send $",IDC_STATIC,55,40,25,10
+    EDITTEXT        IDC_EDIT2,80,40,30,10,ES_AUTOHSCROLL
+    RTEXT           "Class $",IDC_STATIC,55,50,25,10
+    EDITTEXT        IDC_EDIT3,80,50,30,10,ES_AUTOHSCROLL
+    RTEXT           "Priority",IDC_STATIC,55,60,25,10
+    EDITTEXT        IDC_EDIT4,85,60,25,10,ES_AUTOHSCROLL
+    RTEXT           "Buf.Size ",IDC_STATIC,55,70,30,10
+    EDITTEXT        IDC_EDIT5,85,70,25,10,ES_AUTOHSCROLL
+    CONTROL         "No Baudrate",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,1,80,50,10
+    CONTROL         "Serial Cable",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,55,80,50,10
+    PUSHBUTTON      "New",IDC_BUTTON3,61,15,17,12
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 111, 23
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 9, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,0,10,110,12,ES_AUTOHSCROLL
+    LTEXT           "Enter New Name",IDC_STATIC,0,0,55,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 110
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 104
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 16
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // “ú–{Œê resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

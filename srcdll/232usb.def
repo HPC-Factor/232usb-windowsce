@@ -1,0 +1,14 @@
+EXPORTS
+  USBInstallDriver
+  USBUnInstallDriver
+  USBDeviceAttach
+  COM_Init
+  COM_Deinit
+  COM_PowerUp
+  COM_PowerDown
+  COM_Open
+  COM_Close
+  COM_Read
+  COM_Write
+  COM_Seek
+  COM_IOControl

@@ -1,0 +1,53 @@
+232usb - RS232 USB driver for WindowsCE
+         Copyright (c) 03-04,06 Zoroyoshi, Japan
+         http://www.softclub.jp/zoro/ce/
+
+06-7-27 updated
+
+■コンパイル方法
+プロジェクトはeVC3のものになっています。
+eVC3そのままではusbに関するヘッダファイルがありませんので、
+eVC4のSTANDARD SDKにあるusbdi.h、usbtypes.h、usb100.hを
+適切な場所にコピーしてください。
+eVC4ではプロジェクトを作り直せばそのままコンパイルできると思います。
+RegisterClientDriverIDとか自前で実装しているので捏造usbd.libは不要です。
+HPC Pro SDK(2.11)を用い、SH3では/align:4096リンクオプションを追加、
+ARMではコンパイラのみeVC4に差し替え、X86はHPC 2000 SDKを用いています。
+
+■いいわけなど
+・ソースコードが構造的にも論理的にも文学的にも汚いですが、
+  私のくせです。気にしないでください。
+・電源断とか機器切断とかの異常系の排他制御をよく検討してません。
+
+■変更点 (新しいものは上に追加されます)
+・手動登録に対応しました。(06-7-27)
+・クラス化していろいろなデバイスに対応しました。(04-5-25)
+・あまりにロバなミスがあったので修正しました。(03-9-30)
+・最初のリリース。(03-9-24)
+
+-------------------------------------------------------------------------
+232usb - RS232 USB driver for WindowsCE
+Copyright (c) 03-04,06 Zoroyoshi, Japan
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. The name of the author may not be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
